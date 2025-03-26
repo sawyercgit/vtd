@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VT Trims - Professional Haircuts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>VT Trims</h1>
+            <p class="tagline">Precision Cuts & Classic Styles</p>
+            <a href="#booking" class="cta-button">Book Now</a>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Classic Cut</h3>
+                    <p>$30</p>
+                </div>
+                <div class="service-card">
+                    <h3>Beard Trim</h3>
+                    <p>$15</p>
+                </div>
+                <div class="service-card">
+                    <h3>Full Service</h3>
+                    <p>$40</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="contact">
+        <div class="container">
+            <h2>Book Your Appointment</h2>
+            <form id="bookingForm" action="https://formsubmit.co/sawyercypherss@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Booking Request - VT Trims">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="thanks.html">
+                
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+                <input type="date" name="date" required>
+                <input type="time" name="time" required>
+                
+                <select name="service" required>
+                    <option value="">Select Service</option>
+                    <option value="classic">Classic Cut ($30)</option>
+                    <option value="beard">Beard Trim ($15)</option>
+                    <option value="full">Full Service ($40)</option>
+                </select>
+                
+                <textarea name="notes" placeholder="Special requests or notes"></textarea>
+                <button type="submit">Request Booking</button>
+            </form>
+            <div id="confirmation" class="confirmation-message"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 VT Trims. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
